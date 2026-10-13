@@ -34,13 +34,13 @@ open class Book(
 }
 
 class Library {
-    val books = mutableListOf<Book>()
+    private val books = mutableListOf<Book>()
 
     fun addBook(book: Book) {
         books.add(book)
     }
 
-    fun getAllBooks(): List<Book> = books
+    fun getAllBooks(): List<Book> = books.toList()
 }
 
 class LibraryPrinter {
